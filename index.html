@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://depot.qodeinteractive.com/wp-content/uploads/2017/02/cropped-Favicon-150x150.png"
+      sizes="32x32"
+    />
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--bootstrap-->
+    <link rel="stylesheet" href="vender/bootstrap/bootstrap.min.css" />
+    <!--fontawsome-->
+    <link rel="stylesheet" href="vender/fontawsome/all.min.css" />
+    <!--coustom-->
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <title>Depot</title>
+  </head>
+
+  <body>
+    <!--start nav bar-->
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary pt-1 sticky-top"
+      id="navbar"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">D E P O T</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item p-3">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item p-3">
+              <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item p-3">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item p-3">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item p-3">
+              <a class="nav-link" href="services.html">Our Services</a>
+            </li>
+            <li class="nav-item p-3">
+              <a class="nav-link" href="cart.html">Cart ($)</a>
+            </li>
+            <li class="nav-item p-3">
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-magnifying-glass fa-beat"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="header">
+      <div class="header-slides">
+        <div class="container">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators d-lg-none">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div
+                    class="col-sm-6 d-flex align-items-center justify-content-center flex-column"
+                  >
+                    <h3>Loremipsum.</h3>
+                    <h4>remisum dolor.</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Deserunt minima quis nostrum molestias labore veritatis
+                      adipisci ex error optio minus, nulla assumenda laboriosam,
+                      dolorem amet debitis! Saepe cum libero obcaecati!
+                    </p>
+                  </div>
+                  <div class="col-sm-6">
+                    <img
+                      src="assets/img/home/h5-product-28-600x728 (1).jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div
+                    class="col-sm-6 d-flex align-items-center justify-content-center flex-column"
+                  >
+                    <h3>Loremipsum.</h3>
+                    <h4>remisum dolor.</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Deserunt minima quis nostrum molestias labore veritatis
+                      adipisci ex error optio minus, nulla assumenda laboriosam,
+                      dolorem amet debitis! Saepe cum libero obcaecati!
+                    </p>
+                  </div>
+                  <div class="col-sm-6">
+                    <img
+                      src="assets/img/home/h4-product-27-600x728 (1).jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div
+                    class="col-sm-6 d-flex align-items-center justify-content-center flex-column"
+                  >
+                    <h3>Loremipsum.</h3>
+                    <h4>remisum dolor.</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Deserunt minima quis nostrum molestias labore veritatis
+                      adipisci ex error optio minus, nulla assumenda laboriosam,
+                      dolorem amet debitis! Saepe cum libero obcaecati!
+                    </p>
+                  </div>
+                  <div class="col-sm-6">
+                    <img
+                      src="assets/img/home/h5-product-29-600x728 (1).jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev custom-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span class="" aria-hidden="true"
+                ><i class="fa-solid fa-arrow-left"></i
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next custom-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span class="" aria-hidden="true"
+                ><i class="fa-solid fa-arrow-right"></i
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="logo-section mb-5">
+        <div class="container mt-4">
+          <div class="row justify-content-center">
+            <div class="col-2 position-relative image-container">
+              <img class="img1" src="assets/img/home/client-8.png" alt="" />
+              <img
+                class="img2 position-absolute"
+                src="assets/img/home/client-1h.png"
+                alt=""
+              />
+            </div>
+            <div class="col-2 position-relative image-container">
+              <img class="img1" src="assets/img/home/client-1.png" alt="" />
+              <img
+                class="img2 position-absolute"
+                src="assets/img/home/client-1h.png"
+                alt=""
+              />
+            </div>
+            <div class="col-2 position-relative image-container">
+              <img class="img1" src="assets/img/home/client-2.png" alt="" />
+              <img
+                class="img2 position-absolute"
+                src="assets/img/home/client-2h.png"
+                alt=""
+              />
+            </div>
+            <div class="col-2 position-relative image-container">
+              <img class="img1" src="assets/img/home/client-3.png" alt="" />
+              <img
+                class="img2 position-absolute"
+                src="assets/img/home/client-3h.png"
+                alt=""
+              />
+            </div>
+            <div class="col-2 position-relative image-container">
+              <img class="img1" src="assets/img/home/client-4.png" alt="" />
+              <img
+                class="img2 position-absolute"
+                src="assets/img/home/client-4h.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="welcome">
+        <div
+          class="container p-5 d-flex justify-content-center align-items-center flex-column"
+        >
+          <h5 class="my-2">WELCOME</h5>
+          <p>
+            Successful brands get into the mind slowly. A blurb in a magazine. A
+            mention in a newspaper.
+          </p>
+        </div>
+      </div>
+      <div class="home-products">
+        <div class="container">
+          <div class="row justify-content-center d-flex">
+            <div class="card col-lg-3 col-md-4 text-center my-3 border-0">
+              <div class="card-img">
+                <img
+                  src="assets/img/home/h1-product-7-600x728 (1).jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="overlay-text">
+                  <span>
+                    <a class="d-inline-block look text-capitalize" href=""
+                      >quick look
+                    </a>
+                    <a class="d-inline-block icon" href=""
+                      ><i class="fa-solid fa-heart"></i></a
+                  ></span>
+                </div>
+              </div>
+              <div class="card-body my-3">
+                <h5 class="card-title small">Card title</h5>
+                <div class="star-rating">
+                  <input type="radio" id="star5" name="rating" value="5" />
+                  <label for="star5">&#9733;</label>
+                  <input type="radio" id="star4" name="rating" value="4" />
+                  <label for="star4">&#9733;</label>
+                  <input type="radio" id="star3" name="rating" value="3" />
+                  <label for="star3">&#9733;</label>
+                  <input type="radio" id="star2" name="rating" value="2" />
+                  <label for="star2">&#9733;</label>
+                  <input type="radio" id="star1" name="rating" value="1" />
+                  <label for="star1">&#9733;</label>
+                </div>
+                <a href="#" class="default-link">100&</a>
+                <a href="#" class="hover-link">Add to cart</a>
+              </div>
+            </div>
+            <div class="card col-lg-3 col-md-4 text-center my-3 border-0">
+              <div class="card-img">
+                <img
+                  src="assets/img/home/h1-product-5-600x728 (1).jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="overlay-text">
+                  <span>
+                    <a class="d-inline-block look text-capitalize" href=""
+                      >quick look
+                    </a>
+                    <a class="d-inline-block icon" href=""
+                      ><i class="fa-solid fa-heart"></i></a
+                  ></span>
+                </div>
+              </div>
+              <div class="card-body my-3">
+                <h5 class="card-title small">Card title</h5>
+                <div class="star-rating">
+                  <input type="radio" id="star5" name="rating" value="5" />
+                  <label for="star5">&#9733;</label>
+                  <input type="radio" id="star4" name="rating" value="4" />
+                  <label for="star4">&#9733;</label>
+                  <input type="radio" id="star3" name="rating" value="3" />
+                  <label for="star3">&#9733;</label>
+                  <input type="radio" id="star2" name="rating" value="2" />
+                  <label for="star2">&#9733;</label>
+                  <input type="radio" id="star1" name="rating" value="1" />
+                  <label for="star1">&#9733;</label>
+                </div>
+                <a href="#" class="default-link">100&</a>
+                <a href="#" class="hover-link">Add to cart</a>
+              </div>
+            </div>
+            <div class="card col-lg-3 col-md-4 text-center my-3 border-0">
+              <div class="card-img">
+                <img
+                  src="assets/img/home/h1-product-4-600x728 (1).jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="overlay-text">
+                  <span>
+                    <a class="d-inline-block look text-capitalize" href=""
+                      >quick look
+                    </a>
+                    <a class="d-inline-block icon" href=""
+                      ><i class="fa-solid fa-heart"></i></a
+                  ></span>
+                </div>
+              </div>
+              <div class="card-body my-3">
+                <h5 class="card-title small">Card title</h5>
+                <div class="star-rating">
+                  <input type="radio" id="star5" name="rating" value="5" />
+                  <label for="star5">&#9733;</label>
+                  <input type="radio" id="star4" name="rating" value="4" />
+                  <label for="star4">&#9733;</label>
+                  <input type="radio" id="star3" name="rating" value="3" />
+                  <label for="star3">&#9733;</label>
+                  <input type="radio" id="star2" name="rating" value="2" />
+                  <label for="star2">&#9733;</label>
+                  <input type="radio" id="star1" name="rating" value="1" />
+                  <label for="star1">&#9733;</label>
+                </div>
+                <a href="#" class="default-link">100&</a>
+                <a href="#" class="hover-link">Add to cart</a>
+              </div>
+            </div>
+            <div class="card col-lg-3 col-md-4 text-center my-3 border-0">
+              <div class="card-img">
+                <img
+                  src="assets/img/home/h5-product-29-600x728 (1).jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="overlay-text">
+                  <span>
+                    <a class="d-inline-block look text-capitalize" href=""
+                      >quick look
+                    </a>
+                    <a class="d-inline-block icon" href=""
+                      ><i class="fa-solid fa-heart"></i></a
+                  ></span>
+                </div>
+              </div>
+              <div class="card-body my-3">
+                <h5 class="card-title small">Card title</h5>
+                <div class="star-rating">
+                  <input type="radio" id="star5" name="rating" value="5" />
+                  <label for="star5">&#9733;</label>
+                  <input type="radio" id="star4" name="rating" value="4" />
+                  <label for="star4">&#9733;</label>
+                  <input type="radio" id="star3" name="rating" value="3" />
+                  <label for="star3">&#9733;</label>
+                  <input type="radio" id="star2" name="rating" value="2" />
+                  <label for="star2">&#9733;</label>
+                  <input type="radio" id="star1" name="rating" value="1" />
+                  <label for="star1">&#9733;</label>
+                </div>
+                <a href="#" class="default-link">100&</a>
+                <a href="#" class="hover-link">Add to cart</a>
+              </div>
+            </div>
+            <div class="card col-lg-3 col-md-4 text-center my-3 border-0">
+              <div class="card-img">
+                <img
+                  src="assets/img/products/h4-product-27-600x728.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="overlay-text">
+                  <span>
+                    <a class="d-inline-block look text-capitalize" href=""
+                      >quick look
+                    </a>
+                    <a class="d-inline-block icon" href=""
+                      ><i class="fa-solid fa-heart"></i></a
+                  ></span>
+                </div>
+              </div>
+              <div class="card-body my-3">
+                <h5 class="card-title small">Card title</h5>
+                <div class="star-rating">
+                  <input type="radio" id="star5" name="rating" value="5" />
+                  <label for="star5">&#9733;</label>
+                  <input type="radio" id="star4" name="rating" value="4" />
+                  <label for="star4">&#9733;</label>
+                  <input type="radio" id="star3" name="rating" value="3" />
+                  <label for="star3">&#9733;</label>
+                  <input type="radio" id="star2" name="rating" value="2" />
+                  <label for="star2">&#9733;</label>
+                  <input type="radio" id="star1" name="rating" value="1" />
+                  <label for="star1">&#9733;</label>
+                </div>
+                <a href="#" class="default-link">100&</a>
+                <a href="#" class="hover-link">Add to cart</a>
+              </div>
+            </div>
+            <div class="card col-lg-3 col-md-4 text-center my-3 border-0">
+              <div class="card-img">
+                <img
+                  src="assets/img/prouducts2/h6-product-48-600x728.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="overlay-text">
+                  <span>
+                    <a class="d-inline-block look text-capitalize" href=""
+                      >quick look
+                    </a>
+                    <a class="d-inline-block icon" href=""
+                      ><i class="fa-solid fa-heart"></i></a
+                  ></span>
+                </div>
+              </div>
+              <div class="card-body my-3">
+                <h5 class="card-title small">Card title</h5>
+                <div class="star-rating">
+                  <input type="radio" id="star5" name="rating" value="5" />
+                  <label for="star5">&#9733;</label>
+                  <input type="radio" id="star4" name="rating" value="4" />
+                  <label for="star4">&#9733;</label>
+                  <input type="radio" id="star3" name="rating" value="3" />
+                  <label for="star3">&#9733;</label>
+                  <input type="radio" id="star2" name="rating" value="2" />
+                  <label for="star2">&#9733;</label>
+                  <input type="radio" id="star1" name="rating" value="1" />
+                  <label for="star1">&#9733;</label>
+                </div>
+                <a href="#" class="default-link">100&</a>
+                <a href="#" class="hover-link">Add to cart</a>
+              </div>
+            </div>
+            <div class="card col-lg-3 col-md-4 text-center my-3 border-0">
+              <div class="card-img">
+                <img
+                  src="assets/img/prouducts2/h6-product-47-600x728.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="overlay-text">
+                  <span>
+                    <a class="d-inline-block look text-capitalize" href=""
+                      >quick look
+                    </a>
+                    <a class="d-inline-block icon" href=""
+                      ><i class="fa-solid fa-heart"></i></a
+                  ></span>
+                </div>
+              </div>
+              <div class="card-body my-3">
+                <h5 class="card-title small">Card title</h5>
+                <div class="star-rating">
+                  <input type="radio" id="star5" name="rating" value="5" />
+                  <label for="star5">&#9733;</label>
+                  <input type="radio" id="star4" name="rating" value="4" />
+                  <label for="star4">&#9733;</label>
+                  <input type="radio" id="star3" name="rating" value="3" />
+                  <label for="star3">&#9733;</label>
+                  <input type="radio" id="star2" name="rating" value="2" />
+                  <label for="star2">&#9733;</label>
+                  <input type="radio" id="star1" name="rating" value="1" />
+                  <label for="star1">&#9733;</label>
+                </div>
+                <a href="#" class="default-link">100&</a>
+                <a href="#" class="hover-link">Add to cart</a>
+              </div>
+            </div>
+            <div class="card col-lg-3 col-md-4 text-center my-3 border-0">
+              <div class="card-img">
+                <img
+                  src="assets/img/prouducts2/h6-product-46-600x728.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="overlay-text">
+                  <span>
+                    <a class="d-inline-block look text-capitalize" href=""
+                      >quick look
+                    </a>
+                    <a class="d-inline-block icon" href=""
+                      ><i class="fa-solid fa-heart"></i></a
+                  ></span>
+                </div>
+              </div>
+              <div class="card-body my-3">
+                <h5 class="card-title small">Card title</h5>
+                <div class="star-rating">
+                  <input type="radio" id="star5" name="rating" value="5" />
+                  <label for="star5">&#9733;</label>
+                  <input type="radio" id="star4" name="rating" value="4" />
+                  <label for="star4">&#9733;</label>
+                  <input type="radio" id="star3" name="rating" value="3" />
+                  <label for="star3">&#9733;</label>
+                  <input type="radio" id="star2" name="rating" value="2" />
+                  <label for="star2">&#9733;</label>
+                  <input type="radio" id="star1" name="rating" value="1" />
+                  <label for="star1">&#9733;</label>
+                </div>
+                <a href="#" class="default-link">100&</a>
+                <a href="#" class="hover-link">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--end nav bar-->
+    <!-- start footer-->
+    <footer class="footer pb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h5>CUSTOMER SERVICE</h5>
+            <a class="linkes" href=""><span>Help & Contact Us </span></a>
+            <a class="linkes" href=""><span>Returns & Refunds </span></a>
+            <a class="linkes" href=""><span>Online Stores </span></a>
+            <a class="linkes" href=""> <span>Terms & Conditions </span></a>
+          </div>
+          <div class="col-md-3">
+            <h5>COMPANY</h5>
+            <a class="linkes" href=""><span>Help & Contact Us </span></a>
+            <a class="linkes" href=""><span>Returns & Refunds </span></a>
+            <a class="linkes" href=""><span>Online Stores </span></a>
+            <a class="linkes" href=""><span>Terms & Conditions </span></a>
+          </div>
+          <div class="col-md-3">
+            <h5>SOCIAL</h5>
+            <a class="linkes" href=""><span>Help & Contact Us </span></a>
+            <a class="linkes" href=""><span>Returns & Refunds </span></a>
+            <a class="linkes" href=""><span>Online Stores </span></a>
+            <a class="linkes" href=""><span>Terms & Conditions </span></a>
+          </div>
+          <div class="col-md-3">
+            <h5>PROFILE</h5>
+            <a class="linkes" href=""><span>Help & Contact Us </span></a>
+            <a class="linkes" href=""><span>Returns & Refunds </span></a>
+            <a class="linkes" href=""><span>Online Stores </span></a>
+            <a class="linkes" href=""><span>Terms & Conditions </span></a>
+          </div>
+        </div>
+        <p>© 2021 Qode Interactive, All Rights Reserved</p>
+      </div>
+    </footer>
+    <!--end footer-->
+    <button id="scrollToTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-chevron-up"></i></button>
+
+    <script src="assets/js/main.js"></script>
+    <script src="./vender/bootstrap/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
