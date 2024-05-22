@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://depot.qodeinteractive.com/wp-content/uploads/2017/02/cropped-Favicon-150x150.png"
+      sizes="32x32"
+    />
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--bootstrap-->
+    <link rel="stylesheet" href="vender/bootstrap/bootstrap.min.css" />
+    <!--fontawsome-->
+    <link rel="stylesheet" href="vender/fontawsome/all.min.css" />
+    <!--coustom-->
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <title>product-SHOP</title>
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary pt-1 sticky-top"
+      id="navbar"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">D E P O T</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item p-3">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item p-3">
+              <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item p-3">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item p-3">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item p-3">
+              <a class="nav-link" href="services.html">Our Services</a>
+            </li>
+            <li class="nav-item p-3">
+              <a class="nav-link" href="cart.html">Cart ($)</a>
+            </li>
+            <li class="nav-item p-3">
+              <a class="nav-link" href="index.html"
+                ><i class="fa-solid fa-magnifying-glass fa-beat"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="product-details" id="product">
+      <div class="content1">
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb  mb-5">
+              <li class="breadcrumb-item text-black-50">
+                <a href="#">Home</a>
+              </li>
+              <li class="breadcrumb-item"><a href="#">Library</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Data</li>
+            </ol>
+          </nav>
+          <div class="row">
+            <div class="col-md-6">
+              <img
+                src="assets/img/list/product-affiliate-img-768x768.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-md-6">
+              <h4>EXTERNAL PRODUCT</h4>
+              <p class="text-black-50 fs-5">$350</p>
+              <div class="star-rating mb-5">
+                <input type="radio" id="star5" name="rating" value="5" />
+                <label for="star5">&#9733;</label>
+                <input type="radio" id="star4" name="rating" value="4" />
+                <label for="star4">&#9733;</label>
+                <input type="radio" id="star3" name="rating" value="3" />
+                <label for="star3">&#9733;</label>
+                <input type="radio" id="star2" name="rating" value="2" />
+                <label for="star2">&#9733;</label>
+                <input type="radio" id="star1" name="rating" value="1" />
+                <label for="star1">&#9733;</label>
+                <span class="fs-6 fw-lighter"> (1 CUSTOMER REVIEW)</span>
+              </div>
+              <p class="fs-6 text-black-50 fw-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                alias exercitationem obcaecati iure molestiae delectus vero
+                libero. Recusandae, eius, sint adipisci, numquam harum
+                repudiandae iusto accusamus assumenda et animi laborum?
+              </p>
+              <button type="button" class="btn btn-dark px-5 py-3 mt-3">
+                BUY ON AMAZON
+              </button>
+              <p class="text-black-50 fw-lighter mt-2">
+                <i class="fa-regular fa-heart"></i> ADD TO WISHLIST
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-4">
+        <nav>
+          <div
+            class="nav nav-tabs mb-5 row border-0"
+            id="nav-tab"
+            role="tablist"
+          >
+            <button
+              class="nav-link active col-lg-2 col-md-3"
+              id="nav-home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-home"
+              type="button"
+              role="tab"
+              aria-controls="nav-home"
+              aria-selected="true"
+            >
+              DESCRIPTION
+            </button>
+            <button
+              class="nav-link col-lg-3 col-md-4"
+              id="nav-profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-profile"
+              type="button"
+              role="tab"
+              aria-controls="nav-profile"
+              aria-selected="false"
+            >
+              ADDITIONAL INFORMATION
+            </button>
+            <button
+              class="nav-link col-lg-2 col-md-3"
+              id="nav-contact-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-contact"
+              type="button"
+              role="tab"
+              aria-controls="nav-contact"
+              aria-selected="false"
+            >
+              REVIEW
+            </button>
+          </div>
+        </nav>
+        <div class="tab-content py-3 border-bottom" id="nav-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="nav-home"
+            role="tabpanel"
+            aria-labelledby="nav-home-tab"
+            tabindex="0"
+          >
+            <h4>DESCRIPTION</h4>
+            <p>
+              Vestibulum ultricies aliquam convallis. Maecenas ut tellus mi.
+              Proin tincidunt, lectus eu volutpat mattis, ante metus lacinia
+              tellus, vitae condimentum nulla enim bibendum nibh. Praesent
+              turpis risus, interdum nec venenatis id, pretium sit amet purus.
+              Interdum et malesuada fames ac ante ipsum primis in faucibus.
+              Aliquam eu lorem nibh. Mauris ex dolor, rutrum in odio vel,
+              suscipit ultrices nunc. Cras ipsum dolor, eleifend et nisl vel,
+              tempor molestie nibh.
+            </p>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="nav-profile"
+            role="tabpanel"
+            aria-labelledby="nav-profile-tab"
+            tabindex="0"
+          >
+            <h4>ADDITIONAL</h4>
+            <p>
+              Weight: 2 kg <br />
+              Dimensions: 10 × 10 × 15 cm <br />
+              Color: Rose <br />
+              Material: Wood <br />
+            </p>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="nav-contact"
+            role="tabpanel"
+            aria-labelledby="nav-contact-tab"
+            tabindex="0"
+          >
+            <h4>1 REVIEW FOR ROSE HOLDBACK</h4>
+            <div class="row d-flex align-items-center mb-4">
+              <div class="col-3">
+                <img class="w-75"
+                  src="assets/img/list/e518cf671dd6e12907d6be828d0acfee (1).png"
+                  alt=""
+                />
+              </div>
+              <div class="col-5">
+                <div class="star-rating">
+                  <input type="radio" id="star5" name="rating" value="5" />
+                  <label for="star5">&#9733;</label>
+                  <input type="radio" id="star4" name="rating" value="4" />
+                  <label for="star4">&#9733;</label>
+                  <input type="radio" id="star3" name="rating" value="3" />
+                  <label for="star3">&#9733;</label>
+                  <input type="radio" id="star2" name="rating" value="2" />
+                  <label for="star2">&#9733;</label>
+                  <input type="radio" id="star1" name="rating" value="1" />
+                  <label for="star1">&#9733;</label>
+                </div>
+                <p>Nikole Burke – 08.02.2017.</p>
+                <p>Amazing!</p>
+              </div>
+            </div>
+            <h6>ADD A REVIEW</h6>
+            <p>
+              Your email address will not be published. Required fields are
+              marked *
+            </p>
+            <p class="text-black">Your rating *</p>
+            <div class="star-rating">
+              <input type="radio" id="star5" name="rating" value="5" />
+              <label for="star5">&#9733;</label>
+              <input type="radio" id="star4" name="rating" value="4" />
+              <label for="star4">&#9733;</label>
+              <input type="radio" id="star3" name="rating" value="3" />
+              <label for="star3">&#9733;</label>
+              <input type="radio" id="star2" name="rating" value="2" />
+              <label for="star2">&#9733;</label>
+              <input type="radio" id="star1" name="rating" value="1" />
+              <label for="star1">&#9733;</label>
+            </div>
+            <div class="mb-3 w-50">
+              <label for="exampleFormControlTextarea1" class="form-label text-black"
+                >Your REVIEW*</label
+              >
+              <textarea
+                class="form-control py-5"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="mb-3 w-50">
+              <label for="exampleFormControlInput1" class="form-label text-black"
+                >Name *</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name"
+              />
+            </div>
+            <div class="mb-3 w-50">
+                <label for="exampleFormControlInput1" class="form-label text-black"
+                  >Email*</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="name@example.com"
+                />
+              </div>
+            
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckChecked"
+                checked
+              />
+              <label class="form-check-label text-black" for="flexCheckChecked">
+                ave my name, email, and website in this browser for the next time I comment.
+              </label>
+              <button type="button" class="btn btn-dark  d-block px-5 py-2 mt-3">Submit</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center d-flex">
+          <div class="card col-lg-3 col-md-4 text-center my-3 border-0">
+            <div class="card-img">
+              <img
+                src="assets/img/prouducts2/h5-product-34-600x728 (2).jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="overlay-text">
+                <span>
+                  <a class="d-inline-block look text-capitalize" href=""
+                    >quick look
+                  </a>
+                  <a class="d-inline-block icon" href=""
+                    ><i class="fa-solid fa-heart"></i></a
+                ></span>
+              </div>
+            </div>
+            <div class="card-body my-3">
+              <h5 class="card-title small">Card title</h5>
+              <div class="star-rating">
+                <input type="radio" id="star5" name="rating" value="5" />
+                <label for="star5">&#9733;</label>
+                <input type="radio" id="star4" name="rating" value="4" />
+                <label for="star4">&#9733;</label>
+                <input type="radio" id="star3" name="rating" value="3" />
+                <label for="star3">&#9733;</label>
+                <input type="radio" id="star2" name="rating" value="2" />
+                <label for="star2">&#9733;</label>
+                <input type="radio" id="star1" name="rating" value="1" />
+                <label for="star1">&#9733;</label>
+              </div>
+              <a href="#" class="default-link">100&</a>
+              <a href="#" class="hover-link">Add to cart</a>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 text-center my-3 border-0">
+            <div class="card-img">
+              <img
+                src="assets/img/home/h5-product-29-600x728 (1).jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="overlay-text">
+                <span>
+                  <a class="d-inline-block look text-capitalize" href=""
+                    >quick look
+                  </a>
+                  <a class="d-inline-block icon" href=""
+                    ><i class="fa-solid fa-heart"></i></a
+                ></span>
+              </div>
+            </div>
+            <div class="card-body my-3">
+              <h5 class="card-title small">Card title</h5>
+              <div class="star-rating">
+                <input type="radio" id="star5" name="rating" value="5" />
+                <label for="star5">&#9733;</label>
+                <input type="radio" id="star4" name="rating" value="4" />
+                <label for="star4">&#9733;</label>
+                <input type="radio" id="star3" name="rating" value="3" />
+                <label for="star3">&#9733;</label>
+                <input type="radio" id="star2" name="rating" value="2" />
+                <label for="star2">&#9733;</label>
+                <input type="radio" id="star1" name="rating" value="1" />
+                <label for="star1">&#9733;</label>
+              </div>
+              <a href="#" class="default-link">100&</a>
+              <a href="#" class="hover-link">Add to cart</a>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 text-center my-3 border-0">
+            <div class="card-img">
+              <img
+                src="assets/img/products/h1-product-4-600x728.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="overlay-text">
+                <span>
+                  <a class="d-inline-block look text-capitalize" href=""
+                    >quick look
+                  </a>
+                  <a class="d-inline-block icon" href=""
+                    ><i class="fa-solid fa-heart"></i></a
+                ></span>
+              </div>
+            </div>
+            <div class="card-body my-3">
+              <h5 class="card-title small">Card title</h5>
+              <div class="star-rating">
+                <input type="radio" id="star5" name="rating" value="5" />
+                <label for="star5">&#9733;</label>
+                <input type="radio" id="star4" name="rating" value="4" />
+                <label for="star4">&#9733;</label>
+                <input type="radio" id="star3" name="rating" value="3" />
+                <label for="star3">&#9733;</label>
+                <input type="radio" id="star2" name="rating" value="2" />
+                <label for="star2">&#9733;</label>
+                <input type="radio" id="star1" name="rating" value="1" />
+                <label for="star1">&#9733;</label>
+              </div>
+              <a href="#" class="default-link">100&</a>
+              <a href="#" class="hover-link">Add to cart</a>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 text-center my-3 border-0">
+            <div class="card-img">
+              <img
+                src="assets/img/prouducts2/h1-product-5-600x728 (2).jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="overlay-text">
+                <span>
+                  <a class="d-inline-block look text-capitalize" href=""
+                    >quick look
+                  </a>
+                  <a class="d-inline-block icon" href=""
+                    ><i class="fa-solid fa-heart"></i></a
+                ></span>
+              </div>
+            </div>
+            <div class="card-body my-3">
+              <h5 class="card-title small">Card title</h5>
+              <div class="star-rating">
+                <input type="radio" id="star5" name="rating" value="5" />
+                <label for="star5">&#9733;</label>
+                <input type="radio" id="star4" name="rating" value="4" />
+                <label for="star4">&#9733;</label>
+                <input type="radio" id="star3" name="rating" value="3" />
+                <label for="star3">&#9733;</label>
+                <input type="radio" id="star2" name="rating" value="2" />
+                <label for="star2">&#9733;</label>
+                <input type="radio" id="star1" name="rating" value="1" />
+                <label for="star1">&#9733;</label>
+              </div>
+              <a href="#" class="default-link">100&</a>
+              <a href="#" class="hover-link">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer pb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <h5>CUSTOMER SERVICE</h5>
+            <a class="linkes" href=""><span>Help & Contact Us </span></a>
+            <a class="linkes" href=""><span>Returns & Refunds </span></a>
+            <a class="linkes" href=""><span>Online Stores </span></a>
+            <a class="linkes" href=""> <span>Terms & Conditions </span></a>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h5>COMPANY</h5>
+            <a class="linkes" href=""><span>Help & Contact Us </span></a>
+            <a class="linkes" href=""><span>Returns & Refunds </span></a>
+            <a class="linkes" href=""><span>Online Stores </span></a>
+            <a class="linkes" href=""><span>Terms & Conditions </span></a>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h5>SOCIAL</h5>
+            <a class="linkes" href=""><span>Help & Contact Us </span></a>
+            <a class="linkes" href=""><span>Returns & Refunds </span></a>
+            <a class="linkes" href=""><span>Online Stores </span></a>
+            <a class="linkes" href=""><span>Terms & Conditions </span></a>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h5>PROFILE</h5>
+            <a class="linkes" href=""><span>Help & Contact Us </span></a>
+            <a class="linkes" href=""><span>Returns & Refunds </span></a>
+            <a class="linkes" href=""><span>Online Stores </span></a>
+            <a class="linkes" href=""><span>Terms & Conditions </span></a>
+          </div>
+        </div>
+        <p>© 2021 Qode Interactive, All Rights Reserved</p>
+      </div>
+    </footer>
+    <button id="scrollToTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-chevron-up"></i></button>
+
+    <script src="./vender/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

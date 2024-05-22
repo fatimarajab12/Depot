@@ -1,0 +1,623 @@
+:root {
+  --maincolor: rgb(128, 126, 126);
+}
+
+* {
+  color: var(--maincolor);
+  font-family: "Catamaran", sans-serif;
+}
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+.star-rating {
+  display: inline-block;
+}
+
+.star-rating input[type="radio"] {
+  display: none;
+}
+
+.star-rating label {
+  font-size: 20px;
+  cursor: pointer;
+  color: #969494;
+}
+
+.star-rating input[type="radio"]:checked + label {
+  color: gold;
+}
+/* Add CSS styles for the button */
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+#scrollToTopBtn i{
+color: #f2f2f2;
+}
+
+
+
+#scrollToTopBtn:hover {
+  background-color: #3a3c3e;
+  padding-top: 10px;
+}
+
+/*navbar*/
+.navbar .navbar-nav li {
+  font-family: "Catamaran", sans-serif;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+}
+
+.navbar .navbar-nav li :hover {
+  color: rgb(159, 158, 158);
+}
+.navbar .navbar-brand {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 25px;
+  color: rgb(8, 8, 8);
+  font-family: "Catamaran", sans-serif;
+}
+/* تغيير لون الروابط النشطة في Bootstrap 5 */
+
+
+/*header style*/
+.header .header-slides {
+  background-color: rgb(243, 243, 243);
+}
+/* تغيير لون النقاط النشطة */
+ .header .carousel-indicators .active {
+  background-color: rgb(0, 0, 0); /* لون الخلفية للنقطة النشطة */
+  padding: 1px;
+}
+
+/* تغيير لون النقاط غير النشطة */
+.header .carousel-indicators button {
+  background-color: lightgray; /* لون الخلفية للنقاط غير النشطة */
+}
+.header .carousel-indicators button {
+  width: 12px; /* عرض النقطة */
+  height: 12px; /* ارتفاع النقطة */
+  margin-right: 5px; /* تباعد بين النقاط */
+  border-radius: 50%; /* تدوير النقاط لتجعلها دائرية */
+}
+
+/* Custom styles for the "Previous" button */
+.custom-prev {
+  border: none; /* Remove the default border */
+  font-size: 24px; /* Adjust the font size */
+  width: 40px; /* Set the width */
+  height: 40px; /* Set the height */
+  top: 50%; /* Center it vertically */
+}
+
+/* Custom styles for the "Next" button */
+.custom-next {
+  border: none; /* Remove the default border */
+  font-size: 24px; /* Adjust the font size */
+  width: 40px; /* Set the width */
+  height: 40px; /* Set the height */
+  top: 50%; /* Center it vertically */
+}
+
+.header img {
+  width: 100%;
+}
+.header .header-slides h3,
+h4 {
+  font-size: 40px;
+  color: #010101;
+}
+.header .header-slides p {
+  color: #6a6262;
+  word-spacing: 2px;
+  font-size: 15px;
+}
+.header .header-slides h3,
+h4,
+p {
+  width: 75%;
+}
+
+.welcome h5 {
+  font-size: 15px;
+}
+.header .welcome p {
+  color: #999999;
+  font-size: 25px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.image-container img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-container img:first-child {
+  opacity: 1;
+}
+
+.image-container:hover img:first-child {
+  opacity: 0;
+}
+
+.image-container:hover img:last-child {
+  transform: translateX(-10%);
+  opacity: 1;
+}
+/*-*/
+
+.card {
+  position: relative;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0
+  ); /* لون خلفية الرابط وتعديل الشفافية حسب الحاجة */
+  text-align: center;
+  opacity: 0; /* الشفافية الابتدائية للرابط */
+  transition: opacity 0.3s ease; /* تأثير تلاشي الرابط */
+}
+.card:hover .overlay-text {
+  opacity: 1; /* إظهار الرابط عند التمرير */
+}
+.overlay-text span {
+  display: inline-block;
+  margin-top: 103%; /* يمكنك تعديل هذا حسب ارتفاع الرابط والتصميم العام */
+  font-size: 16px; /* حجم الخط */
+  text-decoration: none; /* إزالة تزيين الرابط إذا كنت ترغب */
+  background-color: #000;
+  padding-left: 1rem;
+  color: #f2f2f2;
+}
+.overlay-text a {
+  color: #fff;
+  letter-spacing: 2px;
+}
+.overlay-text .icon {
+  background-color: var(--maincolor);
+
+  padding-right: 3px;
+  padding-left: 3px;
+}
+.overlay-text .icon i {
+  color: #fff;
+}
+/*-*/
+.card img{
+  width: 100%;
+}
+.hover-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color:var(--maincolor); /* لون النص */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  opacity: 0; /* الشفافية الابتدائية للرابط */
+  transition: opacity 0.3s ease; /* تأثير تلاشي الرابط */
+  
+}
+.card:hover .hover-link {
+  opacity: 1; /* إظهار الرابط عند التمرير */
+}
+.card:hover .default-link {
+  opacity: 0;
+}
+.default-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color:var(--maincolor); /* لون النص */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  opacity: 1; /* الشفافية الابتدائية للرابط */
+  transition: opacity 0.3s ease; /* تأثير تلاشي الرابط */
+}
+
+/*about style
+*/
+.about .title {
+  background-image: url(../img/about/about-title-img1.jpg);
+  background-position: center;
+}
+.about .title h2 {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  color: aliceblue;
+  font-family: "Catamaran", sans-serif;
+  word-spacing: 4px;
+  font-size: 50px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.about .container {
+  padding-top: 8rem;
+}
+.about .nav-tabs .nav-link {
+  color: rgb(0, 0, 0);
+  border: solid 1px;
+  margin-bottom: 1rem;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Catamaran", sans-serif;
+  text-align: center;
+}
+
+.about .nav-tabs .nav-link:hover {
+  color: rgb(255, 255, 255);
+  background-color: black;
+}
+ .about .nav-tabs .nav-link.active {
+  color: rgb(255, 255, 255);
+  background-color: black;
+}
+.tab-pane p {
+  font-family: "Catamaran", sans-serif;
+  color: rgb(187, 183, 183);
+  line-height: 25px;
+  font-size: 16px;
+  font-weight: lighter;
+}
+.about .learn-more {
+  font-family: "Catamaran", sans-serif;
+  color: rgb(187, 183, 183);
+  line-height: 25px;
+  font-size: 12px;
+  font-weight: lighter;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.about .learn-more :hover {
+  color: black;
+  padding-right: 10px;
+}
+.about .title2 h2 {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgb(8, 8, 8);
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-top: 6rem;
+}
+.about .what-saying {
+  background: #f2f2f2;
+}
+.about .carousel-info {
+  margin-top: 2rem;
+}
+
+.about .carousel-info p {
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 35px;
+  margin-bottom: 30px;
+  color: rgb(152, 149, 149);
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+}
+.about .carousel-info h4,
+h5 {
+  color: black;
+}
+.about .carousel-info h5 {
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 6rem;
+ 
+}
+.about .carousel-info h4 {
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+/*start conact*/
+.map iframe {
+  width: 100%;
+  height: 650px;
+}
+
+.contact .location h3 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.contact .location p {
+  font-size: 16px;
+  font-weight: 100;
+  color: rgb(152, 149, 149);
+  line-height: 30px;
+  word-spacing: 4px;
+}
+.contact .location {
+  border-bottom: solid rgb(157, 155, 153) 1px;
+  padding-bottom: 6rem;
+}
+.contact .location i {
+  border: 1px solid rgb(152, 149, 149);
+  color: rgb(152, 149, 149);
+  border-radius: 100%;
+  padding: 10px;
+}
+
+.contact .subscribe h4 {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+.contact .subscribe p {
+  font-size: 25px;
+  word-spacing: 3px;
+  color: rgb(152, 149, 149);
+  font-weight: 100;
+  line-height: 40px;
+}
+
+.contact .subscribe .form-group {
+   /* Use flexbox to align items in a row */
+  /* Vertically center items */
+  width: 70%;
+  
+}
+
+/* styling for the input and button */
+.contact .subscribe input[type="text"] {
+  /* Add some spacing between the input and button */
+  border: 1px solid rgb(126, 123, 123);
+ 
+}
+
+.contact .subscribe button {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+.contact .subscribe button:hover {
+  background-color: #474646;
+}
+@media only screen and (max-width: 900px) {
+  
+}
+/*shop*/
+.shop .title {
+  background-image: url(../img/products/elements-title-img.jpg);
+  background-position: top;
+  background-size: cover;
+ color: #f2f2f2;
+
+}
+.shop img{
+  width: 100%;
+}
+.shop .title h2 {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  color: rgb(255, 255, 255);
+  font-family: "Catamaran", sans-serif;
+  word-spacing: 4px;
+  font-size: 50px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.price-range-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+input[type="range"] {
+  width: 100%;
+  background-color: #5f5d5d;
+
+  /* Gray background for slider */
+}
+
+.shop .container {
+  padding-top: 8rem;
+}
+.sidebar h3 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 100;
+}
+.sidebar a {
+  text-decoration: none;
+  color: var(--maincolor);
+  font-size: 12px;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 100;
+}
+.sidebar a:hover {
+  color: #000000;
+}
+.shop p {
+  color: #5f5d5d;
+}
+.page-numbers li {
+  display: inline;
+  margin-right: 1rem;
+}
+.page-numbers a {
+  color: var(--maincolor);
+}
+.page-numbers a:hover {
+  color: #000000;
+}
+.shop .overlay-text{
+  text-align: center;
+   top: -5%;
+}
+@media only screen and (max-width: 500px) {
+  .shop .overlay-text{
+    top: 2%;
+     
+  }
+
+}
+/*products*/
+.product-details .content1{
+  background-color: #f2f2f2;
+}
+.product-details .breadcrumb-item a{
+color: #000;
+}
+.product-details h4{
+  font-size: 16px;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 700;
+  
+}
+
+.product-details .nav-tabs .nav-link {
+  color: rgb(0, 0, 0);
+  border: solid 1px;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Catamaran", sans-serif;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+ .product-details .nav-tabs .nav-link.active {
+  color: rgb(255, 255, 255);
+  background-color: black;
+}
+@media only screen and (max-width: 500px) {
+  .product-details  .nav-link {
+   width: 100%;
+   
+  }
+  
+}
+
+/*cart*/
+.cart .title {
+  background-image: url(../img/products/elements-title-img.jpg);
+  background-position: top;
+  background-size: cover;
+ color: #f2f2f2;
+ padding: 8rem;
+
+}
+.cart h3{
+  border: #6a6262 1px solid;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  letter-spacing: 0px;
+}
+.cart p{
+  font-size: 15px;
+  line-height: 30px;
+  color: var(--maincolor);
+  font-weight: 100;
+}
+.cart button{
+  background-color: #000;
+}
+.cart button:hover{
+  background-color: #1b1919;
+}
+
+
+/*services*/
+.services .title{
+  background-image: url(../img/about/about-title-img1.jpg);
+  color: #fff;
+  padding: 10rem;
+  background-position: center;
+}
+.stratgy{
+  background-image: url(../img/list/services-img-2.jpg);
+}
+@media only screen and (max-width: 700px) {
+  .stra-content{
+    width: 75% !important;
+  }
+
+}
+
+/*footer*/
+.footer {
+  background-color: #000000;
+  padding-top: 7rem;
+}
+.footer h5,
+p {
+  color: #fff;
+}
+.footer a,
+p {
+  display: block;
+  padding-top: 10px;
+  color: #f2f2f2;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 11px;
+  font-weight: lighter;
+  line-height: 20px;
+  font-family: "Catamaran", sans-serif;
+}
+.footer .row {
+  border-bottom: solid 1px rgb(53, 55, 55);
+}
+.footer .linkes::before {
+  content: "";
+  margin-right: 5px;
+}
+.footer .linkes:hover:before {
+  content: "__";
+}
